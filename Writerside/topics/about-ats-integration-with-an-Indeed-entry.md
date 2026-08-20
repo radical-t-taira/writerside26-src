@@ -44,7 +44,7 @@ Indeed Applyは、求人応募システム（ATS: Applicant Tracking System）�
 
 ## 実装のステップ
 
-### **Step 1: ルートの定義（CSRF除外が必要）**
+### **Step 1: ルートの定義（CSRF除外が必要）** {collapsible="true"}
 
 Indeedからのリクエストは外部からのPOSTなので、CSRF検証を除外する必要があります。
 
@@ -54,7 +54,7 @@ Route::post('/indeed-apply/webhook', 'Api\IndeedApplyController@receive')
     ->name('indeed.apply.webhook');
 ```
 
-### **Step 2: コントローラーの作成**
+### **Step 2: コントローラーの作成** {collapsible="true"}
 
 ```php
 <?php
@@ -137,7 +137,7 @@ class IndeedApplyController extends Controller
 }
 ```
 
-### **Step 3: 環境設定**
+### **Step 3: 環境設定** {collapsible="true"}
 
 ```php
 // config/services.php に追加
