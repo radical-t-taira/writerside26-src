@@ -16,10 +16,10 @@ GoogleCloudの無料枠(Always Free)でWebサーバを構築する
 | ゾーン | 任意                                                                        |
 | マシンタイプ | **e2-micro**                                                              |
 | OS | Ubuntu                                                                    |
-| OSバージョン | Ubuntu 24.04 LTS                                                          |
+| OSバージョン | Ubuntu 24.04 LTS<br>`x86/64, amd64 noble image built on 2026-08-07`       |
 | ブートディスク | Standard Persistent Disk （標準永続ディスク）                                       |
 | ディスク容量 | **30GB** 以下                                                               |
-| ファイアウォール | HTTP トラフィックを許可する<br>HTTPS トラフィックを許可する                                     |
+| ファイアウォール | ✅ HTTP トラフィックを許可する<br>✅ HTTPS トラフィックを許可する                                 |
 
 ---
 
