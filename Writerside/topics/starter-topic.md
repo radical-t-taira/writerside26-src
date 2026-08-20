@@ -1,35 +1,35 @@
-# About MyDocument
+# MyDocumentについて
 
 <!--Writerside adds this topic when you create a new documentation project.
 You can use it as a sandbox to play with Writerside features, and remove it from the TOC when you don't need it anymore.-->
 
-## Add new topics
-You can create empty topics, or choose a template for different types of content that contains some boilerplate structure to help you get started:
+## 新しいトピックを追加する
+空のトピックを作成したり、開始に役立つ定型構造を含むさまざまな種類のコンテンツのテンプレートを選択したりできます。
 
 ![Create new topic options](new_topic_options.png){ width=290 }{border-effect=line}
 
-## Write content
-%product% supports two types of markup: Markdown and XML.
-When you create a new help article, you can choose between two topic types, but this doesn't mean you have to stick to a single format.
-You can author content in Markdown and extend it with semantic attributes or inject entire XML elements.
+## コンテンツを書く
+Writersideは、MarkdownとXMLの2種類のマークアップをサポートしています。 
+新しいヘルプ記事を作成するときは、2つのトピック タイプから選択できますが、これは単一の形式に固執する必要があるという意味ではありません。
+Markdownでコンテンツを作成してセマンティック属性で拡張したり、XML要素全体を挿入したりできます。
 
-## Inject XML
-For example, this is how you inject a procedure:
+## XMLを挿入する
+たとえば、プロシージャを挿入する方法は次のとおりです。
 
-<procedure title="Inject a procedure" id="inject-a-procedure">
+<procedure title="手順を導入する" id="inject-a-procedure">
     <step>
-        <p>Start typing and select a procedure type from the completion suggestions:</p>
+        <p>入力を開始し、完了の提案からプロシージャの種類を選択します。</p>
         <img src="completion_procedure.png" alt="completion suggestions for procedure" border-effect="line"/>
     </step>
     <step>
-        <p>Press <shortcut>Tab</shortcut> or <shortcut>Enter</shortcut> to insert the markup.</p>
+        <p><shortcut>Tab</shortcut> または<shortcut>Enter</shortcut>を押してマークアップを挿入します。</p>
     </step>
 </procedure>
 
-## Add interactive elements
+## インタラクティブな要素を追加する
 
-### Tabs
-To add switchable content, you can make use of tabs (inject them by starting to type `tab` on a new line):
+### タブ
+切り替え可能なコンテンツを追加するには、タブを利用できます（新しい行に入力を開始してタブを挿入します）。
 
 <tabs>
     <tab title="Markdown">
@@ -41,33 +41,27 @@ To add switchable content, you can make use of tabs (inject them by starting to 
     </tab>
 </tabs>
 
-### Collapsible blocks
-Apart from injecting entire XML elements, you can use attributes to configure the behavior of certain elements.
-For example, you can collapse a chapter that contains non-essential information:
+### 折りたたみ可能なブロック
+XML 要素全体を挿入するだけでなく、属性を使用して特定の要素の動作を構成することもできます。 たとえば、必須ではない情報を含む章を折りたたむことができます。
 
-#### Supplementary info {collapsible="true"}
-Content under a collapsible header will be collapsed by default,
-but you can modify the behavior by adding the following attribute:
+#### 補足情報 {collapsible="true"}
+折りたたみ可能なヘッダーの下のコンテンツはデフォルトで折りたたまれますが、次の属性を追加することで動作を変更できます。
 `default-state="expanded"`
 
-### Convert selection to XML
-If you need to extend an element with more functions, you can convert selected content from Markdown to semantic markup.
-For example, if you want to merge cells in a table, it's much easier to convert it to XML than do this in Markdown.
-Position the caret anywhere in the table and press <shortcut>Alt+Enter</shortcut>:
+### 選択範囲をXMLに変換する
+より多くの関数を使用して要素を拡張する必要がある場合は、選択したコンテンツをMarkdownからセマンティックマークアップに変換できます。
+たとえば、テーブル内のセルをマージしたい場合は、Markdownでこれを行うよりもXMLに変換する方がはるかに簡単です。 キャレットをテーブルの任意の場所に置き、次のボタンを押します<shortcut>Alt+Enter</shortcut>。 
 
 <img src="convert_table_to_xml.png" alt="Convert table to XML" width="706" border-effect="line"/>
 
-## Feedback and support
-Please report any issues, usability improvements, or feature requests to our
-<a href="https://youtrack.jetbrains.com/newIssue?project=WRS">YouTrack project</a>
-(you will need to register).
+## フィードバックとサポート
+問題、ユーザビリティの改善、または機能のリクエストがある場合は、<a href="https://youtrack.jetbrains.com/newIssue?project=WRS">YouTrack project</a>に報告してください(登録する必要があります)。
 
-You are welcome to join our
-<a href="https://jb.gg/WRS_Slack">public Slack workspace</a>.
-Before you do, please read our [Code of conduct](https://www.jetbrains.com/help/writerside/writerside-code-of-conduct.html).
-We assume that you’ve read and acknowledged it before joining.
+<a href="https://jb.gg/WRS_Slack">公開Slackワークスペース</a>への参加を歓迎します。
+その前に、当社の[行動規範](https://www.jetbrains.com/help/writerside/writerside-code-of-conduct.html)をお読みください。
+参加前に読んで確認済みであることを前提としています。
 
-You can also always email us at [writerside@jetbrains.com](mailto:writerside@jetbrains.com).
+いつでも[writerside@jetbrains.com](mailto:writerside@jetbrains.com)までメールでお問い合わせください
 
 <seealso>
     <category ref="wrs">
